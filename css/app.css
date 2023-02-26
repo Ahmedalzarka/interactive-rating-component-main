@@ -1,0 +1,86 @@
+:root{
+    --dark-blue:#262E38;
+    --light-gray:#969FAD;
+    --medium-gray:#7C8798;
+    --orange:#FC7614;
+    --very-dark-blue:#131518;
+    --radial-gradient-blue:radial-gradient(#232A34, #181E27);
+}
+*{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-dark-blue);
+}
+.container{
+    background:var(--radial-gradient-blue);
+    padding:3.2em;
+    display: flex;
+    flex-direction: column;
+    width: 412px;
+    height: 412px;
+    border-radius: 20px;
+}
+.star-circle{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin-top: 30px;
+    color: white;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+p{
+    margin-top:15px;
+    color:white;
+    font-size: 1.5em;
+    color:var(--light-gray);
+    font-weight: 400;
+    line-height: 24px;
+}
+.rating-circle-container{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51px;
+    height: 51px;
+    background: var(--dark-blue);
+    border-radius: 50%;
+}
+h2{
+    color:white;font-size: 1.6em;
+    font-weight: 700;
+}
+button{
+    color:white;
+    padding:11px 138px;
+    border-radius: 500px;
+    border: none;
+    background-color: var(--orange);
+    font-size: 1.5em;
+    margin-top:32px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
