@@ -68,9 +68,17 @@ p{
     height: 51px;
     background: var(--dark-blue);
     border-radius: 50%;
+    color:var(--light-gray);
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.circle:hover{
+    background: var(--orange);
+    color:white;
 }
 h2{
-    color:white;font-size: 1.6em;
+    color:var(--light-gray);
+    font-size: 1.6em;
     font-weight: 700;
 }
 button{
@@ -83,4 +91,42 @@ button{
     margin-top:32px;
     letter-spacing: 2px;
     font-weight: 700;
+    text-align: center;
+}
+button:hover{
+    background-color: white;
+    color:var(--orange);
+}
+@media (max-width:425px){
+    .container{
+        width:327px;
+        height: 360px;
+        padding:2.4em 2.4em 3.2em 2.4em;
+    }
+    .star-circle{
+        width: 40px;
+        height: 40px;
+        }
+    h1{
+        font-size: 2.4em;
+        margin-top:16px;
+    }
+    p{
+        width: 282px;
+        height: 66px;
+        font-size: 1.4em;
+        margin-top: 10px;
+        line-height: normal;
+        font-weight: normal;
+    }
+    button{
+        margin-top: 24px;
+        padding:12px 108px;
+        font-size: 14px;
+    }
+    .circle{
+        width:42px;
+        height: 42px;
+        font-size: 1.4em;
+    }
 }
