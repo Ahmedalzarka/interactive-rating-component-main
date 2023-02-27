@@ -60,26 +60,28 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 51px;
+.rating-circle-container div label input[type="checkbox"]{
+    display: none;
+}
+.rating-circle-container div label input[type="checkbox"]:checked ~ h3{
+    background-color: var(--orange);
+    color: white;
+}
+h3{
+    width:51px;
     height: 51px;
     background: var(--dark-blue);
     border-radius: 50%;
     color:var(--light-gray);
     font-size: 1.6em;
     font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 51px;
 }
-.circle:hover{
-    background: var(--orange);
+h3:hover{
+    background-color: var(--medium-gray);
     color:white;
-}
-h2{
-    color:var(--light-gray);
-    font-size: 1.6em;
-    font-weight: 700;
 }
 button{
     color:white;
@@ -127,6 +129,8 @@ button:hover{
     .circle{
         width:42px;
         height: 42px;
+    }
+    h3{
         font-size: 1.4em;
     }
 }
