@@ -5,25 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/app.css ">
+  <script src="js/app.js "></script>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
   <main>
-    <div class="container">
+    <div class="container hidden">
       <div class="star-circle">
         <img src="images/icon-star.svg">
       </div>
       <h1>How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <div class="rating-circle-container">
-        <div class="circle"><label><input type="checkbox" value="rating"/><h3>1</h3></label></div>
-        <div class="circle"><label><input type="checkbox" value="rating"/><h3>2</h3></label></div>
-        <div class="circle"><label><input type="checkbox" value="rating"/><h3>3</h3></label></div>
-        <div class="circle"><label><input type="checkbox" value="rating"/><h3>4</h3></label></div>
-        <div class="circle"><label><input type="checkbox" value="rating"/><h3>5</h3></label></div>
+        <div class="circle"><label><input type="radio" name="rating"/><h3>1</h3></label></div>
+        <div class="circle"><label><input type="radio" name="rating"/><h3>2</h3></label></div>
+        <div class="circle"><label><input type="radio" name="rating"/><h3>3</h3></label></div>
+        <div class="circle"><label><input type="radio" name="rating"/><h3>4</h3></label></div>
+        <div class="circle"><label><input type="radio" name="rating"/><h3>5</h3></label></div>
       </div>
       <button>SUBMIT</button>
+    </div>
+    <div class="thanks-section">
+      <img src="images/illustration-thank-you.svg" id="thanks-icon">
+      <div class="feedback middle-align-text"><h4>You selected <span class="rate"></span> out of 5</h4></div>
+      <h1 class="middle-align-text">Thank you!</h1>
+      <p class="middle-align-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
     </div>
   </main>
 </body>

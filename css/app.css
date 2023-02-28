@@ -22,14 +22,21 @@ body{
     justify-content: center;
     background-color: var(--very-dark-blue);
 }
-.container{
+.container, .thanks-section {
     background:var(--radial-gradient-blue);
-    padding:3.2em;
     display: flex;
     flex-direction: column;
     width: 412px;
     height: 412px;
     border-radius: 20px;
+}
+.container{
+    padding:3.2em;
+}
+.thanks-section{
+    align-items: center;
+    justify-content: center;
+    padding: 4.5em 3.5em;
 }
 .star-circle{
     width: 48px;
@@ -41,7 +48,7 @@ body{
     justify-content: center;
 }
 h1{
-    margin-top: 30px;
+    margin-top: 28px;
     color: white;
     font-size: 2.8em;
     font-weight: 700;
@@ -54,16 +61,37 @@ p{
     font-weight: 400;
     line-height: 24px;
 }
+.feedback{
+    width: 195px;
+    height: 35px;
+    background: var(--dark-blue);
+    border-radius: 200px;
+    margin-top: 32px;
+}
+h4{
+    color:var(--orange);
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    line-height: 36px;
+}
+.thanks-section h1{
+    margin-top:32px;
+}
+.middle-align-text{
+    text-align: center;
+    vertical-align: middle;
+}
 .rating-circle-container{
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.rating-circle-container div label input[type="checkbox"]{
+} 
+.rating-circle-container div label input[type="radio"]{
     display: none;
 }
-.rating-circle-container div label input[type="checkbox"]:checked ~ h3{
+.rating-circle-container div label input[type="radio"]:checked ~ h3{
     background-color: var(--orange);
     color: white;
 }
@@ -78,6 +106,8 @@ h3{
     text-align: center;
     vertical-align: middle;
     line-height: 51px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 h3:hover{
     background-color: var(--medium-gray);
@@ -98,6 +128,12 @@ button{
 button:hover{
     background-color: white;
     color:var(--orange);
+}
+.hidden{
+    display: none ;
+}
+#thanks-icon{
+    max-width:162px;
 }
 @media (max-width:425px){
     .container{
